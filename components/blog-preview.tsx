@@ -113,7 +113,7 @@ export default function BlogPreview() {
           className="text-center mt-10"
         >
           <Button asChild size="lg">
-            <Link href="/blog">View All Posts</Link>
+            <Link href="./blog">View All Posts</Link>
           </Button>
         </motion.div>
       </div>
