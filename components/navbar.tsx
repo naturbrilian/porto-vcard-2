@@ -36,6 +36,7 @@ export default function Navbar() {
     { name: t.nav.projects, href: "/projects" },
     { name: t.nav.gallery, href: "/gallery" },
     { name: t.nav.blog, href: "/blog" },
+    { name: "CV", href: "/cv" },
     { name: t.nav.contact, href: "/contact" },
   ]
 
