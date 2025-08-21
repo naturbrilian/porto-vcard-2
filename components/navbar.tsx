@@ -32,7 +32,7 @@ export default function Navbar() {
     { name: "Education", href: "#education" },
     { name: "Projects", href: "#projects" },
     { name: "Gallery", href: "#gallery" },
-    { name: "Blog", href: "#blog" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "#contact" },
   ]
 

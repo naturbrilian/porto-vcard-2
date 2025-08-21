@@ -22,7 +22,7 @@ export default function BlogPreview() {
       date: "May 1, 2025",
       readTime: "5 min read",
       author: "Liba Natur Brilian",
-      slug: "blog/video-editing-tips",
+      slug: "/blog/video-editing-tips",
     },
     {
       title: "Graphic Design Trends in 2025",
@@ -31,7 +31,7 @@ export default function BlogPreview() {
       date: "April 15, 2025",
       readTime: "4 min read",
       author: "Liba Natur Brilian",
-      slug: "blog/design-trends",
+      slug: "/blog/design-trends",
     },
     {
       title: "The Challenges of Software Translation",
@@ -40,7 +40,7 @@ export default function BlogPreview() {
       date: "March 28, 2025",
       readTime: "6 min read",
       author: "Liba Natur Brilian",
-      slug: "blog/software-translation",
+      slug: "/blog/software-translation",
     },
   ]
 
@@ -97,7 +97,7 @@ export default function BlogPreview() {
                   </div>
                 </CardContent>
                 <CardFooter className="px-6 pb-6 pt-0">
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant="outline" className="w-full bg-transparent">
                     <Link href={post.slug}>Read More</Link>
                   </Button>
                 </CardFooter>
@@ -113,7 +113,7 @@ export default function BlogPreview() {
           className="text-center mt-10"
         >
           <Button asChild size="lg">
-            <Link href="./blog">View All Posts</Link>
+            <Link href="/blog">View All Posts</Link>
           </Button>
         </motion.div>
       </div>
