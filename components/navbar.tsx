@@ -30,10 +30,10 @@ export default function Navbar() {
     { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
     { name: "Education", href: "#education" },
-    { name: "Projects", href: "#projects" },
-    { name: "Gallery", href: "#gallery" },
+    { name: "Projects", href: "/projects" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/contact" },
   ]
 
   return (
@@ -45,7 +45,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="#home" className="text-xl font-bold tracking-tight hover:text-primary transition-colors">
+          <Link href="/" className="text-xl font-bold tracking-tight hover:text-primary transition-colors">
             Liba<span className="text-primary">.</span>
           </Link>
 

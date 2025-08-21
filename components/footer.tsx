@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <Link href="#home" className="text-2xl font-bold tracking-tight">
+            <Link href="/" className="text-2xl font-bold tracking-tight">
               Liba<span className="text-primary">.</span>
             </Link>
             <p className="text-muted-foreground mt-2 max-w-md">Graphics Designer & Video Editor | Translator EN/ID</p>
@@ -59,7 +59,7 @@ export default function Footer() {
           </p>
 
           <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-            <Link href="#home" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
               Home
             </Link>
             <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors">
@@ -68,13 +68,16 @@ export default function Footer() {
             <Link href="#skills" className="text-muted-foreground hover:text-primary transition-colors">
               Skills
             </Link>
-            <Link href="#projects" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/projects" className="text-muted-foreground hover:text-primary transition-colors">
               Projects
+            </Link>
+            <Link href="/gallery" className="text-muted-foreground hover:text-primary transition-colors">
+              Gallery
             </Link>
             <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
               Blog
             </Link>
-            <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
               Contact
             </Link>
           </nav>
