@@ -300,9 +300,9 @@ export const translations: Record<Language, Translation> = {
     },
     about: {
       title: "About Me",
-      subtitle: "Get to know more about me and my background",
+      subtitle: "Who's me?",
       description1:
-        "Hello! I'm Liba Natur Brilian, a passionate graphics designer and video editor with experience in translation services. I specialize in creating visually appealing designs and engaging video content, while also providing EN/ID translation services for software and applications.",
+        "I'm Liba Natur Brilian, also known as Natur or gingalibadeidara, I'm a video editor and graphics designer with a passion on technologies, art, music and content creator. Here, I will share some projects or uploads that I have previously uploaded on deviantart (such as vectors, and design results), the results of my edited videos and other writings. I hope this platform can be a space to share inspiration, ideas, and interesting discussions with you and all of you",
       description2:
         "With years of experience in the creative industry, I've developed a keen eye for detail and a strong understanding of visual communication. I'm dedicated to delivering high-quality work that meets client expectations and communicates their message effectively.",
       phone: "Phone",
@@ -581,9 +581,9 @@ export const translations: Record<Language, Translation> = {
     },
     about: {
       title: "Tentang Saya",
-      subtitle: "Kenali lebih jauh tentang saya dan latar belakang saya",
+      subtitle: "Siapakah saya?",
       description1:
-        "Halo! Saya Liba Natur Brilian, seorang desainer grafis dan editor video yang berpengalaman dalam layanan penerjemahan. Saya mengkhususkan diri dalam menciptakan desain yang menarik secara visual dan konten video yang engaging, sambil juga menyediakan layanan penerjemahan EN/ID untuk perangkat lunak dan aplikasi.",
+        "Saya Liba Natur Brilian, juga dikenal sebagai Natur atau gingalibadeidara, seorang editor video dan desainer grafis dengan ketertarikan yang mendalam terhadap teknologi, seni, musik, dan pembuatan konten. Disini, Aku akan membagikan beberapa project atau unggahan yang sebelumnya pernah aku unggah di deviantart (seperti vektor, dan hasil desain), hasil video yang aku edit dan tulisan-tulisan lainnya. Aku harap platform ini bisa menjadi ruang untuk berbagi inspirasi, ide, dan diskusi yang menarik bersama kamu dan kalian semua.",
       description2:
         "Dengan pengalaman bertahun-tahun di industri kreatif, saya telah mengembangkan mata yang tajam untuk detail dan pemahaman yang kuat tentang komunikasi visual. Saya berdedikasi untuk memberikan karya berkualitas tinggi yang memenuhi ekspektasi klien dan mengkomunikasikan pesan mereka secara efektif.",
       phone: "Telepon",
