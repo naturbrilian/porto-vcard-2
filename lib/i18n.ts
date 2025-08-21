@@ -35,6 +35,82 @@ export interface Translation {
     languageSkills: string
     availabilityStatus: string
   }
+  // About Page
+  aboutPage: {
+    title: string
+    subtitle: string
+    backToHome: string
+    helloTitle: string
+    introduction1: string
+    introduction2: string
+    letsWorkTogether: string
+    viewMyCV: string
+    myJourney: string
+    journeySubtitle: string
+    valuesTitle: string
+    valuesSubtitle: string
+    beyondWork: string
+    beyondWorkSubtitle: string
+    whatIBring: string
+    whatIBringSubtitle: string
+    readyToWork: string
+    readyToWorkDescription: string
+    startProject: string
+    viewMyWork: string
+    yearsExperience: string
+    basedIn: string
+    // Timeline
+    timeline: {
+      year2014: string
+      title2014: string
+      desc2014: string
+      year2017: string
+      title2017: string
+      desc2017: string
+      year2018: string
+      title2018: string
+      desc2018: string
+      year2021: string
+      title2021: string
+      desc2021: string
+      year2024: string
+      title2024: string
+      desc2024: string
+    }
+    // Values
+    values: {
+      qualityTitle: string
+      qualityDesc: string
+      collaborationTitle: string
+      collaborationDesc: string
+      learningTitle: string
+      learningDesc: string
+      passionTitle: string
+      passionDesc: string
+    }
+    // Interests
+    interests: {
+      photography: string
+      photographyDesc: string
+      music: string
+      musicDesc: string
+      gaming: string
+      gamingDesc: string
+      reading: string
+      readingDesc: string
+      coffee: string
+      coffeeDesc: string
+    }
+    // Skills
+    skillsOverview: {
+      creativeDesign: string
+      creativeDesignDesc: string
+      videoProduction: string
+      videoProductionDesc: string
+      translationLoc: string
+      translationLocDesc: string
+    }
+  }
   // Skills Section
   skills: {
     title: string
@@ -236,6 +312,91 @@ export const translations: Record<Language, Translation> = {
       languageSkills: "Indonesian (Fluent), English (Intermediate)",
       availabilityStatus: "Available for freelance",
     },
+    aboutPage: {
+      title: "About Me",
+      subtitle:
+        "Get to know the person behind the designs, the story that drives my creativity, and the values that guide my work.",
+      backToHome: "Back to Home",
+      helloTitle: "Hello, I'm Liba Natur Brilian",
+      introduction1:
+        "I'm a passionate creative professional who believes that great design has the power to tell stories, solve problems, and connect people across cultures. With over 7 years of experience in graphics design, video editing, and translation services, I've had the privilege of working with diverse clients and bringing their visions to life.",
+      introduction2:
+        "My journey began with a curiosity about how visual elements can communicate complex ideas simply and beautifully. This curiosity led me to explore multimedia design, video production, and eventually translation work, where I discovered the fascinating intersection of language, culture, and visual communication.",
+      letsWorkTogether: "Let's Work Together",
+      viewMyCV: "View My CV",
+      myJourney: "My Journey",
+      journeySubtitle:
+        "Every professional has a story. Here's mine - from a curious student to a seasoned creative professional.",
+      valuesTitle: "My Values & Philosophy",
+      valuesSubtitle:
+        "These core principles guide every project I take on and every relationship I build with clients.",
+      beyondWork: "Beyond Work",
+      beyondWorkSubtitle:
+        "When I'm not designing or editing, you'll find me exploring these passions that fuel my creativity.",
+      whatIBring: "What I Bring to the Table",
+      whatIBringSubtitle: "A unique combination of technical skills, creative vision, and cultural understanding.",
+      readyToWork: "Ready to Work Together?",
+      readyToWorkDescription:
+        "I'm always excited to take on new challenges and help bring creative visions to life. Let's discuss how we can make your next project extraordinary.",
+      startProject: "Start a Project",
+      viewMyWork: "View My Work",
+      yearsExperience: "7+ Years Experience",
+      basedIn: "Based in Indonesia",
+      timeline: {
+        year2014: "2014",
+        title2014: "Started Multimedia Education",
+        desc2014:
+          "Began studying multimedia design at SMKTI PELITA NUSANTARA, discovering my passion for visual storytelling.",
+        year2017: "2017",
+        title2017: "First Professional Role",
+        desc2017: "Joined Kediri Televisi as a video editor, working on YouTube content and social media management.",
+        year2018: "2018",
+        title2018: "Broadcasting Specialization",
+        desc2018:
+          "Completed broadcasting diploma at CBM Academy, expanding skills in video production and media creation.",
+        year2021: "2021",
+        title2021: "Translation Career",
+        desc2021:
+          "Started at Yuramedia Link as Graphics Designer and Translator Checker, combining design with language skills.",
+        year2024: "2024",
+        title2024: "Freelance Expansion",
+        desc2024: "Expanded services to include comprehensive brand identity design and international client projects.",
+      },
+      values: {
+        qualityTitle: "Quality First",
+        qualityDesc: "I believe in delivering exceptional work that exceeds expectations and stands the test of time.",
+        collaborationTitle: "Collaboration",
+        collaborationDesc: "Great projects come from great teamwork. I value open communication and shared creativity.",
+        learningTitle: "Continuous Learning",
+        learningDesc:
+          "The creative industry evolves rapidly. I'm committed to staying current with trends and technologies.",
+        passionTitle: "Passion-Driven",
+        passionDesc: "I pour my heart into every project, treating each client's vision as if it were my own.",
+      },
+      interests: {
+        photography: "Photography",
+        photographyDesc: "Capturing moments and stories",
+        music: "Music",
+        musicDesc: "Listening to various genres",
+        gaming: "Gaming",
+        gamingDesc: "Strategy and adventure games",
+        reading: "Reading",
+        readingDesc: "Design and technology books",
+        coffee: "Coffee",
+        coffeeDesc: "Exploring local coffee shops",
+      },
+      skillsOverview: {
+        creativeDesign: "Creative Design",
+        creativeDesignDesc:
+          "From brand identities to marketing materials, I create designs that capture attention and communicate effectively.",
+        videoProduction: "Video Production",
+        videoProductionDesc:
+          "Bringing stories to life through compelling video content, from concept to final delivery.",
+        translationLoc: "Translation & Localization",
+        translationLocDesc:
+          "Bridging language barriers with accurate translations that preserve meaning and cultural context.",
+      },
+    },
     skills: {
       title: "My Skills",
       subtitle: "Here are the tools and technologies I work with",
@@ -431,6 +592,95 @@ export const translations: Record<Language, Translation> = {
       availability: "Ketersediaan",
       languageSkills: "Bahasa Indonesia (Fasih), Bahasa Inggris (Menengah)",
       availabilityStatus: "Tersedia untuk freelance",
+    },
+    aboutPage: {
+      title: "Tentang Saya",
+      subtitle:
+        "Kenali pribadi di balik desain, cerita yang mendorong kreativitas saya, dan nilai-nilai yang memandu pekerjaan saya.",
+      backToHome: "Kembali ke Beranda",
+      helloTitle: "Halo, saya Liba Natur Brilian",
+      introduction1:
+        "Saya adalah seorang profesional kreatif yang penuh semangat dan percaya bahwa desain yang hebat memiliki kekuatan untuk menceritakan kisah, memecahkan masalah, dan menghubungkan orang-orang lintas budaya. Dengan pengalaman lebih dari 7 tahun dalam desain grafis, editing video, dan layanan penerjemahan, saya telah memiliki hak istimewa untuk bekerja dengan klien yang beragam dan mewujudkan visi mereka.",
+      introduction2:
+        "Perjalanan saya dimulai dengan rasa ingin tahu tentang bagaimana elemen visual dapat mengkomunikasikan ide-ide kompleks dengan sederhana dan indah. Rasa ingin tahu ini membawa saya untuk mengeksplorasi desain multimedia, produksi video, dan akhirnya pekerjaan penerjemahan, di mana saya menemukan persimpangan yang menarik antara bahasa, budaya, dan komunikasi visual.",
+      letsWorkTogether: "Mari Bekerja Sama",
+      viewMyCV: "Lihat CV Saya",
+      myJourney: "Perjalanan Saya",
+      journeySubtitle:
+        "Setiap profesional memiliki cerita. Inilah cerita saya - dari mahasiswa yang penasaran hingga profesional kreatif yang berpengalaman.",
+      valuesTitle: "Nilai & Filosofi Saya",
+      valuesSubtitle:
+        "Prinsip-prinsip inti ini memandu setiap proyek yang saya ambil dan setiap hubungan yang saya bangun dengan klien.",
+      beyondWork: "Di Luar Pekerjaan",
+      beyondWorkSubtitle:
+        "Ketika saya tidak sedang mendesain atau mengedit, Anda akan menemukan saya mengeksplorasi passion yang memicu kreativitas saya.",
+      whatIBring: "Apa yang Saya Tawarkan",
+      whatIBringSubtitle: "Kombinasi unik dari keterampilan teknis, visi kreatif, dan pemahaman budaya.",
+      readyToWork: "Siap Bekerja Sama?",
+      readyToWorkDescription:
+        "Saya selalu bersemangat untuk mengambil tantangan baru dan membantu mewujudkan visi kreatif. Mari diskusikan bagaimana kita dapat membuat proyek Anda berikutnya menjadi luar biasa.",
+      startProject: "Mulai Proyek",
+      viewMyWork: "Lihat Karya Saya",
+      yearsExperience: "Pengalaman 7+ Tahun",
+      basedIn: "Berdomisili di Indonesia",
+      timeline: {
+        year2014: "2014",
+        title2014: "Memulai Pendidikan Multimedia",
+        desc2014:
+          "Mulai belajar desain multimedia di SMKTI PELITA NUSANTARA, menemukan passion untuk visual storytelling.",
+        year2017: "2017",
+        title2017: "Peran Profesional Pertama",
+        desc2017:
+          "Bergabung dengan Kediri Televisi sebagai editor video, bekerja pada konten YouTube dan manajemen media sosial.",
+        year2018: "2018",
+        title2018: "Spesialisasi Broadcasting",
+        desc2018:
+          "Menyelesaikan diploma broadcasting di CBM Academy, memperluas keterampilan dalam produksi video dan pembuatan media.",
+        year2021: "2021",
+        title2021: "Karir Penerjemahan",
+        desc2021:
+          "Memulai di Yuramedia Link sebagai Desainer Grafis dan Pemeriksa Penerjemah, menggabungkan desain dengan keterampilan bahasa.",
+        year2024: "2024",
+        title2024: "Ekspansi Freelance",
+        desc2024:
+          "Memperluas layanan untuk mencakup desain identitas merek yang komprehensif dan proyek klien internasional.",
+      },
+      values: {
+        qualityTitle: "Kualitas Utama",
+        qualityDesc: "Saya percaya dalam memberikan karya luar biasa yang melampaui ekspektasi dan tahan uji waktu.",
+        collaborationTitle: "Kolaborasi",
+        collaborationDesc:
+          "Proyek hebat berasal dari kerja tim yang hebat. Saya menghargai komunikasi terbuka dan kreativitas bersama.",
+        learningTitle: "Pembelajaran Berkelanjutan",
+        learningDesc:
+          "Industri kreatif berkembang pesat. Saya berkomitmen untuk tetap mengikuti tren dan teknologi terkini.",
+        passionTitle: "Didorong Passion",
+        passionDesc:
+          "Saya mencurahkan hati saya ke setiap proyek, memperlakukan visi setiap klien seolah-olah itu adalah visi saya sendiri.",
+      },
+      interests: {
+        photography: "Fotografi",
+        photographyDesc: "Menangkap momen dan cerita",
+        music: "Musik",
+        musicDesc: "Mendengarkan berbagai genre",
+        gaming: "Gaming",
+        gamingDesc: "Game strategi dan petualangan",
+        reading: "Membaca",
+        readingDesc: "Buku desain dan teknologi",
+        coffee: "Kopi",
+        coffeeDesc: "Menjelajahi kedai kopi lokal",
+      },
+      skillsOverview: {
+        creativeDesign: "Desain Kreatif",
+        creativeDesignDesc:
+          "Dari identitas merek hingga materi pemasaran, saya menciptakan desain yang menarik perhatian dan berkomunikasi secara efektif.",
+        videoProduction: "Produksi Video",
+        videoProductionDesc:
+          "Menghidupkan cerita melalui konten video yang menarik, dari konsep hingga pengiriman akhir.",
+        translationLoc: "Penerjemahan & Lokalisasi",
+        translationLocDesc:
+          "Menjembatani hambatan bahasa dengan terjemahan akurat yang mempertahankan makna dan konteks budaya.",
+      },
     },
     skills: {
       title: "Keahlian Saya",
@@ -629,6 +879,89 @@ export const translations: Record<Language, Translation> = {
       availability: "対応可能性",
       languageSkills: "インドネシア語（流暢）、英語（中級）",
       availabilityStatus: "フリーランス対応可能",
+    },
+    aboutPage: {
+      title: "私について",
+      subtitle:
+        "デザインの背後にいる人物、私の創造性を駆り立てる物語、そして私の仕事を導く価値観について知ってください。",
+      backToHome: "ホームに戻る",
+      helloTitle: "こんにちは、私はリバ・ナトゥール・ブリリアンです",
+      introduction1:
+        "私は、優れたデザインには物語を語り、問題を解決し、文化を超えて人々を結びつける力があると信じる情熱的なクリエイティブプロフェッショナルです。グラフィックデザイン、ビデオ編集、翻訳サービスで7年以上の経験を持ち、多様なクライアントと協力してビジョンを実現する特権を得てきました。",
+      introduction2:
+        "私の旅は、視覚的要素がいかに複雑なアイデアをシンプルで美しく伝えることができるかという好奇心から始まりました。この好奇心により、マルチメディアデザイン、ビデオ制作、そして最終的に翻訳作業を探求することになり、言語、文化、視覚的コミュニケーションの魅力的な交差点を発見しました。",
+      letsWorkTogether: "一緒に働きましょう",
+      viewMyCV: "私のCVを見る",
+      myJourney: "私の歩み",
+      journeySubtitle:
+        "すべてのプロフェッショナルには物語があります。これが私の物語です - 好奇心旺盛な学生から経験豊富なクリエイティブプロフェッショナルまで。",
+      valuesTitle: "私の価値観と哲学",
+      valuesSubtitle:
+        "これらの核となる原則は、私が取り組むすべてのプロジェクトとクライアントとの関係構築を導いています。",
+      beyondWork: "仕事を超えて",
+      beyondWorkSubtitle:
+        "デザインや編集をしていないとき、私の創造性を刺激するこれらの情熱を探求している私を見つけることができます。",
+      whatIBring: "私が提供するもの",
+      whatIBringSubtitle: "技術的スキル、創造的ビジョン、文化的理解のユニークな組み合わせ。",
+      readyToWork: "一緒に働く準備はできていますか？",
+      readyToWorkDescription:
+        "私は常に新しい挑戦を受け入れ、創造的なビジョンの実現を支援することに興奮しています。次のプロジェクトを特別なものにする方法について話し合いましょう。",
+      startProject: "プロジェクトを開始",
+      viewMyWork: "私の作品を見る",
+      yearsExperience: "7年以上の経験",
+      basedIn: "インドネシア在住",
+      timeline: {
+        year2014: "2014年",
+        title2014: "マルチメディア教育の開始",
+        desc2014:
+          "SMKTI PELITA NUSANTARAでマルチメディアデザインの学習を開始し、ビジュアルストーリーテリングへの情熱を発見。",
+        year2017: "2017年",
+        title2017: "初のプロフェッショナル職",
+        desc2017: "Kediri TelevisiにビデオエディターとしてJoin、YouTubeコンテンツとソーシャルメディア管理に従事。",
+        year2018: "2018年",
+        title2018: "放送専門化",
+        desc2018: "CBM Academyで放送ディプロマを修了し、ビデオ制作とメディア制作のスキルを拡張。",
+        year2021: "2021年",
+        title2021: "翻訳キャリア",
+        desc2021:
+          "Yuramedia Linkでグラフィックデザイナーおよび翻訳チェッカーとして開始、デザインと言語スキルを組み合わせ。",
+        year2024: "2024年",
+        title2024: "フリーランス拡張",
+        desc2024: "包括的なブランドアイデンティティデザインと国際クライアントプロジェクトを含むサービスを拡張。",
+      },
+      values: {
+        qualityTitle: "品質第一",
+        qualityDesc: "期待を超え、時の試練に耐える卓越した作品の提供を信じています。",
+        collaborationTitle: "コラボレーション",
+        collaborationDesc:
+          "素晴らしいプロジェクトは素晴らしいチームワークから生まれます。オープンなコミュニケーションと共有された創造性を重視します。",
+        learningTitle: "継続的学習",
+        learningDesc:
+          "クリエイティブ業界は急速に進化します。トレンドと技術の最新情報を把握することにコミットしています。",
+        passionTitle: "情熱主導",
+        passionDesc: "すべてのプロジェクトに心を注ぎ、各クライアントのビジョンを自分のもののように扱います。",
+      },
+      interests: {
+        photography: "写真撮影",
+        photographyDesc: "瞬間と物語を捉える",
+        music: "音楽",
+        musicDesc: "様々なジャンルを聴く",
+        gaming: "ゲーム",
+        gamingDesc: "戦略とアドベンチャーゲーム",
+        reading: "読書",
+        readingDesc: "デザインと技術の本",
+        coffee: "コーヒー",
+        coffeeDesc: "地元のコーヒーショップを探索",
+      },
+      skillsOverview: {
+        creativeDesign: "クリエイティブデザイン",
+        creativeDesignDesc:
+          "ブランドアイデンティティからマーケティング資料まで、注目を集め効果的にコミュニケーションするデザインを作成します。",
+        videoProduction: "ビデオ制作",
+        videoProductionDesc: "コンセプトから最終納品まで、魅力的なビデオコンテンツを通じて物語に命を吹き込みます。",
+        translationLoc: "翻訳・ローカライゼーション",
+        translationLocDesc: "意味と文化的コンテキストを保持する正確な翻訳で言語の壁を橋渡しします。",
+      },
     },
     skills: {
       title: "私のスキル",

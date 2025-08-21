@@ -62,7 +62,7 @@ export default function Footer() {
             <Link href="/" className="text-muted-foreground hover:text-primary transition-colors">
               Home
             </Link>
-            <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
               About
             </Link>
             <Link href="#skills" className="text-muted-foreground hover:text-primary transition-colors">
@@ -76,6 +76,9 @@ export default function Footer() {
             </Link>
             <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">
               Blog
+            </Link>
+            <Link href="/cv" className="text-muted-foreground hover:text-primary transition-colors">
+              CV
             </Link>
             <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
               Contact
