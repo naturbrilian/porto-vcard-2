@@ -302,7 +302,7 @@ export const translations: Record<Language, Translation> = {
       title: "About Me",
       subtitle: "Who's me?",
       description1:
-        "I'm Liba Natur Brilian, also known as Natur or gingalibadeidara, I'm a video editor and graphics designer with a passion on technologies, art, music and content creator. Here, I will share some projects or uploads that I have previously uploaded on deviantart (such as vectors, and design results), the results of my edited videos and other writings. I hope this platform can be a space to share inspiration, ideas, and interesting discussions with you and all of you",
+        "I'm Liba Natur Brilian, also known as Natur or gingalibadeidara, I'm a video editor and graphics designer with a passion on technologies, art, music and content creator. ",
       description2:
         "With years of experience in the creative industry, I've developed a keen eye for detail and a strong understanding of visual communication. I'm dedicated to delivering high-quality work that meets client expectations and communicates their message effectively.",
       phone: "Phone",
