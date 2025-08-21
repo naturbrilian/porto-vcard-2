@@ -4,12 +4,15 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
+import LanguageSwitcher from "@/components/language-switcher"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { useLanguage } from "@/hooks/use-language"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const { language, setLanguage, t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,15 +28,15 @@ export default function Navbar() {
   }
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Experience", href: "#experience" },
-    { name: "Education", href: "#education" },
-    { name: "Projects", href: "/projects" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Blog", href: "/blog" },
-    { name: "Contact", href: "/contact" },
+    { name: t.nav.home, href: "#home" },
+    { name: t.nav.about, href: "#about" },
+    { name: t.nav.skills, href: "#skills" },
+    { name: t.nav.experience, href: "#experience" },
+    { name: t.nav.education, href: "#education" },
+    { name: t.nav.projects, href: "/projects" },
+    { name: t.nav.gallery, href: "/gallery" },
+    { name: t.nav.blog, href: "/blog" },
+    { name: t.nav.contact, href: "/contact" },
   ]
 
   return (
@@ -60,11 +63,13 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            <LanguageSwitcher currentLanguage={language} onLanguageChange={setLanguage} />
             <ThemeToggle />
           </nav>
 
           {/* Mobile Navigation Toggle */}
           <div className="flex items-center md:hidden">
+            <LanguageSwitcher currentLanguage={language} onLanguageChange={setLanguage} />
             <ThemeToggle />
             <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu" className="ml-2">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

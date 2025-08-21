@@ -5,9 +5,11 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
+import { useLanguage } from "@/hooks/use-language"
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false)
+  const { t } = useLanguage()
 
   useEffect(() => {
     setIsVisible(true)
@@ -25,11 +27,9 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="mb-6"
           >
-            <h2 className="text-lg md:text-xl font-medium text-muted-foreground mb-2">Hello, I am</h2>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">Liba Natur Brilian</h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-              Graphics Designer & Video Editor | Translator EN/ID
-            </p>
+            <h2 className="text-lg md:text-xl font-medium text-muted-foreground mb-2">{t.hero.greeting}</h2>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4">{t.hero.name}</h1>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">{t.hero.description}</p>
           </motion.div>
 
           <motion.div
@@ -39,10 +39,10 @@ export default function Hero() {
             className="flex flex-wrap justify-center gap-4 mb-10"
           >
             <Button asChild size="lg">
-              <Link href="#contact">Get in Touch</Link>
+              <Link href="#contact">{t.hero.getInTouch}</Link>
             </Button>
             <Button variant="outline" size="lg" asChild>
-              <Link href="#projects">View My Work</Link>
+              <Link href="#projects">{t.hero.viewWork}</Link>
             </Button>
           </motion.div>
 
