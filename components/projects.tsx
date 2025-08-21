@@ -8,6 +8,7 @@ import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Eye } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
 
 export default function Projects() {
   const [ref, inView] = useInView({
@@ -19,46 +20,71 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Video Editing Project",
+      title: "Corporate Training Video Series",
       category: "video",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Professional video editing for a corporate client.",
-      link: "https://www.foriio.com/naturbrilian/categories/Video",
+      image: "/placeholder.svg?height=400&width=600&text=Corporate+Training+Videos",
+      description: "12-part training series for employee onboarding with motion graphics and interactive elements.",
+      link: "/projects/video-editing-showcase",
+      external: false,
+      tags: ["Video Editing", "Motion Graphics", "Corporate"],
+      duration: "3 months",
+      client: "Yuramedia Link",
     },
     {
-      title: "Graphic Design Portfolio",
+      title: "Brand Identity Design Package",
       category: "design",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Collection of branding and marketing materials.",
-      link: "https://www.foriio.com/naturbrilian/categories/Video",
+      image: "/placeholder.svg?height=400&width=600&text=Brand+Identity+Design",
+      description: "Complete brand identity including logo, color palette, typography, and brand guidelines.",
+      link: "/projects/brand-identity-design",
+      external: false,
+      tags: ["Branding", "Logo Design", "Print Design"],
+      duration: "6 weeks",
+      client: "Local Business",
     },
     {
-      title: "Translation Project",
+      title: "Software Localization Project",
       category: "translation",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Software localization from English to Indonesian.",
-      link: "#",
+      image: "/placeholder.svg?height=400&width=600&text=Software+Translation",
+      description: "Complete UI/UX translation and localization of mobile application from English to Indonesian.",
+      link: "/projects/software-localization",
+      external: false,
+      tags: ["Translation", "Localization", "Mobile App"],
+      duration: "4 weeks",
+      client: "Tech Startup",
     },
     {
-      title: "Social Media Campaign",
-      category: "design",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Visual content creation for social media platforms.",
-      link: "#",
-    },
-    {
-      title: "Documentary Editing",
+      title: "Social Media Video Campaign",
       category: "video",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Editing and post-production for a short documentary.",
+      image: "/placeholder.svg?height=400&width=600&text=Social+Media+Campaign",
+      description: "30-day social media video campaign with daily content creation and community management.",
       link: "https://www.foriio.com/naturbrilian/categories/Video",
+      external: true,
+      tags: ["Social Media", "Content Creation", "Video Editing"],
+      duration: "1 month",
+      client: "Kediri Televisi",
     },
     {
-      title: "App Translation",
+      title: "Documentary Post-Production",
+      category: "video",
+      image: "/placeholder.svg?height=400&width=600&text=Documentary+Editing",
+      description:
+        "Complete post-production workflow for 45-minute documentary including color grading and sound design.",
+      link: "https://www.foriio.com/naturbrilian/categories/Video",
+      external: true,
+      tags: ["Documentary", "Color Grading", "Sound Design"],
+      duration: "8 weeks",
+      client: "Independent Filmmaker",
+    },
+    {
+      title: "E-learning Platform Translation",
       category: "translation",
-      image: "/placeholder.svg?height=400&width=600",
-      description: "Complete UI translation for a mobile application.",
-      link: "#",
+      image: "/placeholder.svg?height=400&width=600&text=E-learning+Translation",
+      description: "Comprehensive translation of educational platform content and user interface elements.",
+      link: "/projects/elearning-translation",
+      external: false,
+      tags: ["E-learning", "Educational Content", "UI Translation"],
+      duration: "10 weeks",
+      client: "Education Company",
     },
   ]
 
@@ -130,8 +156,8 @@ export default function Projects() {
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <Link
                       href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={project.external ? "_blank" : "_self"}
+                      rel={project.external ? "noopener noreferrer" : ""}
                       className="bg-primary text-primary-foreground p-3 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
                       aria-label={`View ${project.title}`}
                     >
@@ -140,15 +166,29 @@ export default function Projects() {
                   </div>
                 </div>
                 <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-2">
+                    <Badge variant="secondary" className="text-xs">
+                      {project.client}
+                    </Badge>
+                    <span className="text-xs text-muted-foreground">{project.duration}</span>
+                  </div>
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {project.tags.slice(0, 3).map((tag, tagIndex) => (
+                      <Badge key={tagIndex} variant="outline" className="text-xs">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
                   <Link
                     href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
+                    target={project.external ? "_blank" : "_self"}
+                    rel={project.external ? "noopener noreferrer" : ""}
+                    className="inline-flex items-center text-primary hover:text-primary/80 transition-colors text-sm font-medium"
                   >
-                    View Project <ExternalLink className="h-4 w-4 ml-1" />
+                    {project.external ? "View External" : "View Details"}
+                    <ExternalLink className="h-4 w-4 ml-1" />
                   </Link>
                 </CardContent>
               </Card>
