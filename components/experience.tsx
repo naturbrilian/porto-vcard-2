@@ -56,10 +56,13 @@ export default function Experience() {
                 index % 2 === 0 ? "md:ml-auto md:pl-12 md:pr-0" : "md:mr-auto md:pr-12 md:pl-0"
               } md:w-1/2 w-full px-4`}
             >
-              <div className="hidden md:block absolute top-6 -left-3 w-6 h-6 rounded-full bg-primary z-10">
+              {/* Timeline dot positioned on the central timeline */}
+              <div className="hidden md:block absolute top-6 left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-primary z-10">
                 {index % 2 === 0 ? (
+                  // Right-side card: line extends from center to right
                   <div className="absolute top-1/2 left-full transform -translate-y-1/2 w-12 h-1 bg-primary"></div>
                 ) : (
+                  // Left-side card: line extends from center to left
                   <div className="absolute top-1/2 right-full transform -translate-y-1/2 w-12 h-1 bg-primary"></div>
                 )}
               </div>

@@ -43,11 +43,13 @@ export default function About() {
                 priority
               />
             </div>
-            <div className="absolute -bottom-5 -right-5 bg-primary text-primary-foreground p-4 rounded-lg shadow-lg">
-              <p className="flex items-center">
-                <MapPin className="h-5 w-5 mr-2" />
-                Indonesia
-              </p>
+
+            {/* Location Badge - Positioned at bottom center of image frame */}
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+              <div className="bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 shadow-lg">
+                <MapPin className="h-4 w-4" />
+                <span className="font-medium">Indonesia</span>
+              </div>
             </div>
           </motion.div>
 
