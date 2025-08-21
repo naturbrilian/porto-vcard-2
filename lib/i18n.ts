@@ -315,11 +315,11 @@ export const translations: Record<Language, Translation> = {
     aboutPage: {
       title: "About Me",
       subtitle:
-        "Get to know the person behind the designs, the story that drives my creativity, and the values that guide my work.",
+        "Who's me?.",
       backToHome: "Back to Home",
       helloTitle: "Hello, I'm Liba Natur Brilian",
       introduction1:
-        "I'm a passionate creative professional who believes that great design has the power to tell stories, solve problems, and connect people across cultures. With over 7 years of experience in graphics design, video editing, and translation services, I've had the privilege of working with diverse clients and bringing their visions to life.",
+        "I'm Liba Natur Brilian, also known as Natur or gingalibadeidara, I'm a video editor and graphics designer with a passion on technologies, art, music and content creator. Here, I will share some projects or uploads that I have previously uploaded on deviantart (such as vectors, and design results), the results of my edited videos and other writings. I hope this platform can be a space to share inspiration, ideas, and interesting discussions with you and all of you.",
       introduction2:
         "My journey began with a curiosity about how visual elements can communicate complex ideas simply and beautifully. This curiosity led me to explore multimedia design, video production, and eventually translation work, where I discovered the fascinating intersection of language, culture, and visual communication.",
       letsWorkTogether: "Let's Work Together",
@@ -596,11 +596,11 @@ export const translations: Record<Language, Translation> = {
     aboutPage: {
       title: "Tentang Saya",
       subtitle:
-        "Kenali pribadi di balik desain, cerita yang mendorong kreativitas saya, dan nilai-nilai yang memandu pekerjaan saya.",
+        "Siapakah aku?",
       backToHome: "Kembali ke Beranda",
       helloTitle: "Halo, saya Liba Natur Brilian",
       introduction1:
-        "Saya adalah seorang profesional kreatif yang penuh semangat dan percaya bahwa desain yang hebat memiliki kekuatan untuk menceritakan kisah, memecahkan masalah, dan menghubungkan orang-orang lintas budaya. Dengan pengalaman lebih dari 7 tahun dalam desain grafis, editing video, dan layanan penerjemahan, saya telah memiliki hak istimewa untuk bekerja dengan klien yang beragam dan mewujudkan visi mereka.",
+        "Saya Liba Natur Brilian, juga dikenal sebagai Natur atau gingalibadeidara, seorang editor video dan desainer grafis dengan ketertarikan yang mendalam terhadap teknologi, seni, musik, dan pembuatan konten. Disini, Aku akan membagikan beberapa project atau unggahan yang sebelumnya pernah aku unggah di deviantart (seperti vektor, dan hasil desain). hasil video yang aku edit dan tulisan-tulisan lainnya. Aku harap platform ini bisa menjadi ruang untuk berbagi inspirasi, ide, dan diskusi yang menarik bersama kamu dan kalian semua.",
       introduction2:
         "Perjalanan saya dimulai dengan rasa ingin tahu tentang bagaimana elemen visual dapat mengkomunikasikan ide-ide kompleks dengan sederhana dan indah. Rasa ingin tahu ini membawa saya untuk mengeksplorasi desain multimedia, produksi video, dan akhirnya pekerjaan penerjemahan, di mana saya menemukan persimpangan yang menarik antara bahasa, budaya, dan komunikasi visual.",
       letsWorkTogether: "Mari Bekerja Sama",
