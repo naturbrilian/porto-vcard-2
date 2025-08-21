@@ -2,10 +2,18 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import LanguageSwitcher from "@/components/language-switcher"
 import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuSeparator,
+  DropdownMenuLabel,
+} from "@/components/ui/dropdown-menu"
 import { cn } from "@/lib/utils"
 import { useLanguage } from "@/hooks/use-language"
 
@@ -40,6 +48,20 @@ export default function Navbar() {
     { name: t.nav.contact, href: "/contact" },
   ]
 
+  const themeItems = [
+    { name: "Modern Minimalist", href: "/themes/modern-minimalist" },
+    { name: "Creative Bold", href: "/themes/creative-bold" },
+    { name: "Professional Corporate", href: "/themes/professional-corporate" },
+    { name: "Artistic Vibrant", href: "/themes/artistic-vibrant" },
+  ]
+
+  const desktopScreenshots = [
+    { name: "Brand Identity", href: "/showcase/brand-identity" },
+    { name: "Video Productions", href: "/showcase/video-productions" },
+    { name: "Translation Projects", href: "/showcase/translation-projects" },
+    { name: "UI/UX Designs", href: "/showcase/ui-ux-designs" },
+  ]
+
   return (
     <header
       className={cn(
@@ -64,6 +86,35 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+
+            {/* Stuff Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="text-sm font-medium hover:text-primary transition-colors">
+                  Stuff <ChevronDown className="ml-1 h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-56">
+                <DropdownMenuLabel>Theme</DropdownMenuLabel>
+                {themeItems.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link href={item.href} className="cursor-pointer">
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuSeparator />
+                <DropdownMenuLabel>Desktop Screenshot</DropdownMenuLabel>
+                {desktopScreenshots.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link href={item.href} className="cursor-pointer">
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             <LanguageSwitcher currentLanguage={language} onLanguageChange={setLanguage} />
             <ThemeToggle />
           </nav>
@@ -92,6 +143,37 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
+
+              {/* Mobile Stuff Section */}
+              <div className="pt-2 border-t border-border">
+                <p className="text-xs font-semibold text-muted-foreground mb-2">STUFF</p>
+
+                {/* Theme Subsection */}
+                <p className="text-xs font-medium text-muted-foreground/80 mb-1 pl-2">Theme</p>
+                {themeItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="block text-sm font-medium hover:text-primary transition-colors py-1 pl-6"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+
+                {/* Desktop Screenshot Subsection */}
+                <p className="text-xs font-medium text-muted-foreground/80 mb-1 pl-2 mt-3">Desktop Screenshot</p>
+                {desktopScreenshots.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="block text-sm font-medium hover:text-primary transition-colors py-1 pl-6"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
             </nav>
           </div>
         )}
